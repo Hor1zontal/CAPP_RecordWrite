@@ -16,7 +16,7 @@ namespace RollingRecord
         {
 
             ReadRecord readRecord = new ReadRecord();
-            readRecord.openExcel("D:\\Documents\\20230107-0341.xls");
+            readRecord.openExcel(".\\record\\20230107-0341.xls");
             //test();
         }
         static public void test()
