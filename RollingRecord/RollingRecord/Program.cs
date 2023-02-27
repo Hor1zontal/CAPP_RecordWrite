@@ -8,15 +8,17 @@ namespace RollingRecord
 {
     internal static class Program
     {
+        //文件路径为根路径下的record，根据自己的文件路径修改DocumentPath路径
+        public static string DocumentPath = "D:\\project\\c#\\CAPP_RecordWrite\\RollingRecord\\record";
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>
-        
+
         static void Main()
         {
 
             ReadRecord readRecord = new ReadRecord();
-            readRecord.openExcel(".\\record\\20230107-0341.xls");
+            readRecord.openExcel(DocumentPath);
             //test();
         }
         static public void test()
